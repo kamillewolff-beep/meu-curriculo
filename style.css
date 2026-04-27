@@ -1,0 +1,110 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Container Principal */
+.curriculo {
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Topo / Header */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cargo {
+    color: #3498db;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3498db;
+}
+
+/* Seções */
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+/* Listas (Cursos e Habilidades) */
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+ul li {
+    background: #f9f9f9;
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: #444;
+    font-size: 0.95rem;
+    border-left: 4px solid #3498db;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    .topo {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .foto {
+        margin-bottom: 15px;
+    }
+
+    ul {
+        grid-template-columns: 1fr;
+    }
+}
